@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>KS grocery store</title>
+		<link rel="stylesheet" type="text/css" href="lab2.css">
+		<script src="groceries.js"></script>
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<h1>KS grocery store</h1>
+		<div class="div1">
+			<button class="tablinks" onclick="openInfo(event, 'Personal data')">Personal data</button>
+  			<button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+ 			<button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+		</div>
+
+		<div class="div2" id="Personal data">
+			<h3>Personal Information</h3>
+			<p class="stext">Please tell us a bit about you:</p>
+			<p>
+				<label class="stext"><strong>Choose a category :</strong>
+					<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+						<option></option>
+						<option>lactose-intolerant</option>
+						<option>nut allergies</option>
+						<option>organic products</option>
+						<option>non-organic products</option>
+						<option>none</option>
+					</select>
+				</label>
+			</p>
+
+		</div>
+
+		<div class="div2" id="Products">
+			<h3>Your targeted products</h3>
+			<p class="stext">We preselected products based on your restrictions.</p>
+			<strong id="stext1">choose items to buy:</strong><br>
+			<div id="displayProduct"></div>
+			<button id="addCart" type="button" class="block" onclick="selectedItems()">Add selected item to cart.</button>
+		</div>
+
+		<div class="div2" id="Cart">
+			<h3>Cart</h3>
+			<p class="stext">Here is your cart.</p>
+			<strong id="stext1">You selected : </strong><br>
+			<div id="displayCart"></div>
+		</div>
+		<p id="signature">Site created by KS</p>
+		<script src="groceries.js"></script>
+		<script src="main.js"></script>	
+	</body>
+</html>

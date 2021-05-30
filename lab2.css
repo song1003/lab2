@@ -1,0 +1,108 @@
+body {
+    background-color: powderblue;
+    width: 1000px;
+    padding: 0px 20px 20px 20px;
+    
+  }
+h1{
+	font-size: 60px;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 40px;
+	color: #ff00ff;  /* Fuchsia */
+	text-shadow: 3px 3px 1px black;
+}
+
+
+.div1{
+	overflow: hidden;
+	border: 5px solid #287718;
+	border-radius: 10px;
+	background-color: #80807b;
+}
+
+button{
+	width: 200px;
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+    text-align: center;
+}
+
+.div1 button{
+	background-color: #FFFFEA;
+	cursor: pointer;
+	float: left;
+	margin-left: 130px; 
+	text-align: center;
+	padding: 14px 16px;
+	border: none;
+	outline: none;
+	transition: 0.3s;
+}
+
+.div1 button:hover {
+  	background-color: #FCF2E3;
+}
+
+.div1 button.active {
+	background-color: #faebd7;
+}
+
+h3{
+	font-size: 28px;
+	padding-bottom: 30px;
+}
+
+.stext{
+	font-size: 18px;
+}
+
+.div2 {
+  	display: none;
+  	text-align: center;
+  	padding-top: 50px;
+  	padding-bottom: 70px;
+  	border: 1px solid rgb(17, 119, 42);
+  	border-top: none;
+  	background-color: #6b6b68;
+}
+
+#product{
+	margin-top: 15px;
+	padding-left: 630px;
+	text-align: left;
+	font-size: 18px;
+}
+
+#displayCart{
+	margin-top: 15px;
+	font-size: 18px;
+}
+
+#stext1{
+	font-size: 18px;
+}
+
+#addCart{
+	border-radius: 10px;
+	border: 5px solid #5c328b;
+	background-color: white;
+	margin-top: 30px;
+	padding: 10px;
+}
+
+#addCart:hover{
+	border-radius: 10px;
+	border: 5px solid #742c9e;
+	background-color: #DFDFDF;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#signature{
+	text-align: right;
+	font-style: italic;
+	font-size: 85%;
+}
